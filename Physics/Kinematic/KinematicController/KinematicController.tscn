@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cow3t3kskcoj3"]
+
+[ext_resource type="PackedScene" uid="uid://v5lsds6ep7q" path="res://Physics/Kinematic/KinematicController/3DGodotRobot.glb" id="2_6tq73"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_o55v4"]
+radius = 0.422303
+height = 1.80035
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_65wlk"]
+
+[node name="KinematicController" type="CharacterBody3D"]
+editor_description = "The base motor of the Character, you can use this reusably across everything"
+
+[node name="Avatar" parent="." instance=ExtResource("2_6tq73")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000148833, -1.01886, -0.0710053)
+
+[node name="Collider" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.107818, 0)
+shape = SubResource("CapsuleShape3D_o55v4")
+
+[node name="SoundPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_65wlk")
+anim_player = NodePath("../Avatar/AnimationPlayer")
+active = true

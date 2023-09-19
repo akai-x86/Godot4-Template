@@ -1,0 +1,56 @@
+{
+	"categories": [
+		{
+			"uuid": "efd8e09c-34ca-408a-a592-9be8b13740d1",
+			"title": "Task",
+			"color": "ff7929"
+		},
+		{
+			"uuid": "cbcf8eae-c142-4a90-ba8b-c0fe787376f5",
+			"title": "Bugfix",
+			"color": "ff4845"
+		},
+		{
+			"uuid": "f00d769a-fa58-409d-ba40-827cf0a0fab7",
+			"title": "Milestone",
+			"color": "00ffff"
+		}
+	],
+	"stages": [
+		{
+			"uuid": "5e80dfc7-51df-440e-ba33-b703e67c9e28",
+			"title": "Doing",
+			"tasks": []
+		},
+		{
+			"uuid": "4e2c7aba-81f8-43c3-a22a-bb6e9a4dc1e5",
+			"title": "Done",
+			"tasks": []
+		},
+		{
+			"uuid": "90a3df97-5df5-4df9-8a1d-3b5ac3f1260f",
+			"title": "New Stage",
+			"tasks": []
+		},
+		{
+			"uuid": "f74d85bd-09ff-4e8e-bc6d-f39331715be1",
+			"title": "Backlog",
+			"tasks": []
+		}
+	],
+	"tasks": [],
+	"layout": {
+		"columns": [
+			[
+				"5e80dfc7-51df-440e-ba33-b703e67c9e28",
+				"f74d85bd-09ff-4e8e-bc6d-f39331715be1"
+			],
+			[
+				"4e2c7aba-81f8-43c3-a22a-bb6e9a4dc1e5"
+			],
+			[
+				"90a3df97-5df5-4df9-8a1d-3b5ac3f1260f"
+			]
+		]
+	}
+}
